@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Century Gothic, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            text-align: center;
+            background-color: #a6b6c2;
+            color: #fff;
+            padding: 20px;
+        }
+        #title {
+            font-size: 24px;
+        }
+        #description {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 5px;
+        }
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this survey to provide us with your valuable feedback.</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+        </div>
+        <div class="form-group">
+            <label for="dropdown">Select your favorite color:</label>
+            <select id="dropdown" name="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Choose your gender:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other"> Other
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Select your hobbies:</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="hobbies" value="reading"> Reading
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="gaming"> Gaming
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="cooking"> Cooking
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
