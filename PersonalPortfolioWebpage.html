@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-family: Century Gothic, sans-serif;
+            font-weight: bold;
+            font-size: 2.5rem; 
+        }
+        h2{
+            font-family: Courier New, sans-serif;
+            font-size: 1.2rem; 
+            color: 	#E30B5C
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        #navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        #navbar ul li {
+            margin-right: 20px;
+        }
+        #navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        #profile-link {
+            margin-left: auto;
+        }
+        #welcome-section {
+            height: 100vh;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .project-title {
+            text-align: center;
+            font-size: 1.5rem; 
+            margin-bottom: 20px;
+        }
+        #projects {
+            background-color: #6082B6;
+            padding: 20px;
+        }
+        .project-tile {
+            width: calc(33.33% - 20px);
+            display: inline-block; 
+            margin-right: 20px;
+            text-align: center; 
+        }
+        .project-tile:nth-child(3n) {
+            margin-right: 0;
+        }
+        .project-content {
+            text-align: center;
+        }
+        .project-content img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            margin: 0 auto;
+        }
+        .project-content p {
+            margin-top: 10px;
+        }
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-content {
+            font-family: Century Gothic, sans-serif;
+            font-weight: bold;
+            font-size: 1.8rem; 
+        }
+        .footer_last{
+            font-family: Courier New, sans-serif;
+            font-size: 1rem; 
+        }
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .disclaimer {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-family: Century Gothic, sans-serif;
+        }
+        @media (max-width: 768px) {
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <a id="profile-link" href="https://github.com/TrinaIlyza/CIT142H-PROJECTS.git" target="_blank">GitHub</a>
+    </nav>
+    <section id="welcome-section">
+        <h1>Annyeong! I'm Trina Ilyza</h1>
+        <h2>an Information Technology student</h2>
+    </section>
+    <section id="projects">
+    <div class="project-tile">
+        <div class="project-content">
+            <h3 class="project-title">These are some of my codes/outputs</h3>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Cat Photo">
+            <p><a href="http://127.0.0.1:5500/CatPhotoApp.html">Cat Photo App</a></p>
+        </div>
+    </div>
+    <div class="project-tile">
+        <div class="project-content">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="Tribute Page Screenshot">
+            <p><a href="https://codepen.io/freeCodeCamp/full/zNqgVx">Tribute Page</a></p>
+        </div>
+    </div>
+    <div class="project-tile">
+        <div class="project-content">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" alt="Cat Photo">
+            <p><a href="http://127.0.0.1:5500/PhotoGallery.html">Photo Gallery</a></p>
+        </div>
+    </div>
+    <div class="project-tile">
+        <div class="project-content">
+            <img src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/609e6151442f0_json_image_1620992337.webp" alt="cafe menu">
+            <p><a href="http://127.0.0.1:5500/CafeMenu.html">Cafe Menu</a></p>
+        </div>
+    </div>
+    <div class="project-tile">
+        <div class="project-content">
+            <img src="https://static.vecteezy.com/system/resources/previews/017/198/650/original/cartoon-cute-penguin-isolated-on-white-background-vector.jpg" alt="penguin">
+            <p><a href="http://127.0.0.1:5500/Penguin.html">Penguin</a></p>
+        </div>
+    </div>
+    <div class="project-tile">
+        <div class="project-content">
+            <img src="https://img.freepik.com/free-vector/city-skyline-landmarks-illustration_23-2148810174.jpg" alt="city picture">
+            <p><a href="http://127.0.0.1:5500/CitySkyline.html">City Skyline</a></p>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <div class="footer-content">
+        <p>Let's work together...</p>
+    </div>
+    <p class="footer_last">How do you take your coffee?</p>
+    <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </div>
+    <p class="disclaimer">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+</section>
+</body>
+</html>
